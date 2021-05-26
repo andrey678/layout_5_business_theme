@@ -93,39 +93,47 @@ h6 {
 /*--------------------------------------------------*/
 
 @font-face {
-  font-family: "Merriweather";
+  font-family: "BrandonGrotesque-Bold";
   font-display: swap;
-  src: url("../fonts/Merriweather-LightItalic.woff") format("woff"), url("../fonts/Merriweather-LightItalic.woff2") format("woff2");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  src: url("../fonts/BrandonGrotesque-Bold.woff") format("woff"), url("../fonts/BrandonGrotesque-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Gotham-Black";
   font-display: swap;
-  src: url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.woff2") format("woff2");
-  font-weight: 300;
+  src: url("../fonts/Gotham-Black.woff") format("woff"), url("../fonts/Gotham-Black.woff2") format("woff2");
+  font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Lato-Bold";
   font-display: swap;
-  src: url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Lato-Light";
+  font-display: swap;
+  src: url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  font-display: swap;
+  src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
   font-display: swap;
   src: url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.woff2") format("woff2");
   font-weight: 300;
@@ -133,25 +141,81 @@ h6 {
 }
 
 @font-face {
-  font-family: "Open Sans";
-  font-display: swap;
-  src: url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-display: swap;
-  src: url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
+  font-family: "OpenSans-Regular";
   font-display: swap;
   src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+}
+
+.header {
+  padding: 22px 0;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu {
+  width: 791px;
+}
+
+.container {
+  width: 1154px;
+  margin: 0 auto;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__link {
+  font-family: "Lato", sans-serif;
+  font-size: 13.5px;
+  line-height: 1.2;
+  color: #868686;
+}
+
+.menu__link_active {
+  display: block;
+  width: 81px;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  background-color: #fff;
+  -webkit-transition: background-color 0.2s ease-out 0s;
+  -o-transition: background-color 0.2s ease-out 0s;
+  transition: background-color 0.2s ease-out 0s;
+}
+
+.menu__link_active:hover {
+  background-color: #ffbb42;
+  color: #ffffff;
+  -webkit-transition: background-color, color 0.2s ease-out 0s;
+  -o-transition: background-color, color 0.2s ease-out 0s;
+  transition: background-color, color 0.2s ease-out 0s;
 }

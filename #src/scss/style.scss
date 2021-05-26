@@ -4,14 +4,95 @@
 // @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;700&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@700;900&display=swap');
 
 @mixin font($font_name, $file_name, $weight, $style) {
-
-@font-face {
-font-family: $font_name;
-font-display: swap;
-src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
-font-weight: #{$weight};
-font-style: #{$style};
-}
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
 }
 
 @import "fonts";
+
+//Cекция Header
+.header {
+  padding: 22px 0;
+  // height: 93px;
+  // .header__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .header__logo
+
+  &__logo {
+  }
+
+  // .header__menu
+
+  &__menu {
+    width: 791px;
+  }
+}
+.container {
+  width: 1154px;
+  margin: 0 auto;
+}
+.logo {
+  // .logo__link
+
+  &__link {
+  }
+
+  // .logo__img
+
+  &__img {
+  }
+}
+
+.menu {
+  // .menu__list
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .menu__list-item
+
+  &__list-item {
+  }
+
+  // .menu__link
+
+  &__link {
+    font-family: "Lato", sans-serif;
+    font-size: 13.5px;
+    line-height: 1.2;
+    color: #868686;
+    // .menu__link_active
+
+    &_active {
+      display: block;
+      width: 81px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      background-color: #fff;
+      transition: background-color 0.2s ease-out 0s;
+      &:hover {
+        background-color: #ffbb42;
+        color: #ffffff;
+        transition: background-color, color 0.2s ease-out 0s;
+      }
+    }
+  }
+}
