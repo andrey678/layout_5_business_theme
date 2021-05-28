@@ -16,3 +16,6 @@ document.querySelector('body').classList.add('no-webp');
 }
 });
 
+//Slick slider
+@@include('slick.js');
+@@include('slickrequest.js');

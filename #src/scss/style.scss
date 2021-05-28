@@ -16,6 +16,9 @@
 
 @import "fonts";
 
+//Подключение Slick slider
+@import "slick";
+
 //Cекция Header
 .header {
   padding: 22px 0;
@@ -91,8 +94,181 @@
       &:hover {
         background-color: #ffbb42;
         color: #ffffff;
-        transition: background-color, color 0.2s ease-out 0s;
+        transition: background-color 0.1s ease-out 0s,color 0.2s ease-out 0s;
+         
       }
     }
   }
 }
+
+.request {
+  background-color:  #709dca;
+  
+  // .request__inner
+
+  &__inner {
+    padding: 110px 41px 0px;
+  }
+
+  // .request__top
+
+  &__top {
+    text-align: center;
+    margin: 0 0 33px 0;
+  }
+
+  // .request__top-heading
+
+  &__top-heading {
+    font-family: "Gotham", sans-serif;
+    font-size: 35px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    color: #ffffff;
+    margin: 0 0 13px 0;
+  }
+
+  // .request__top-text
+
+  &__top-text {
+    font-family: "OpenSans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+
+  // .request__middle
+
+  &__middle {
+    
+  }
+
+  // .request__form
+
+  &__form {
+      width: 1084px;
+  }
+
+  // .request__slider
+
+  &__slider {
+    background: url('../img/Request/laptop.png')center 0px no-repeat;
+    margin: 0 auto;
+    padding: 19px 0 60px;
+    position: relative;
+    top: 63px
+  }
+
+  // .request__slider-item
+
+  &__slider-item {
+    
+
+    
+  }
+
+  // .request__slider-img
+
+  &__slider-img {
+ margin: 0 auto;
+
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    background:transparent;
+    
+    margin: 0 auto;
+    
+    .slick-active {
+      button{
+        background: transparent;
+        border: 2px solid #1ca8dd;
+      }
+    }
+      button {
+        
+        font-size:0;
+        width: 16px;
+        height: 15px;
+        border-radius: 50%;
+        background: transparent;
+        border: 2px solid #dedfe0;
+        margin: 0 6px;
+      }
+    // }
+}
+}
+.container {
+}
+
+.form {
+  // .form__input
+
+  &__input {
+    
+    
+    width: 281px;
+    height: 46px;
+    font-family: "OpenSans", sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #a9a9a9;
+    padding: 18px 0 18px 41px;
+    margin:0 5px 0 0;
+      
+
+
+    &:first-child{
+        background: url('../img/Request/Icons/fullname.png')15px 15px no-repeat , #ffffff;
+        
+    }
+    &:nth-child(2){
+        background: url('../img/Request/Icons/email.png')15px 17px no-repeat , #ffffff;
+        
+    }
+    &:nth-child(3){
+        background: url('../img/Request/Icons/phonenumber.png')15px 15px no-repeat , #ffffff;
+        
+    }
+  }
+
+  
+
+  // .form__button
+
+  &__button {
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 211px;
+    height: 46px;
+    background-color: #ffbb42;
+  &:hover{
+    border-radius: 10px;
+    color: #ffbb42;
+    background-color: green;
+    transition: all 0.1s linear 0s;
+  }
+  }
+
+}
+
+
+// Секция Services
+.services{
+  padding: 203px 0 155px;
+    
+  }
