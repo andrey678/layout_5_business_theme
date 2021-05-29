@@ -268,7 +268,131 @@
 
 
 // Секция Services
-.services{
+
+
+.services {
   padding: 203px 0 155px;
+  /* .services__title */
+  &__title {
+    color: #394b50;
+    text-align: center;
+  }
+  /* .services__subtitle */
+  &__subtitle {
+    color: #394b50;
+    text-align: center;
+  }
+  /* .services__group */
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    padding: 93px 0 0;
+
+  }
+  /* .services__items-left */
+  &__items-left {
+    height: 428px;
+    width: 508px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+    
     
   }
+  /* .services__item */
+  &__item {
+    
+    display: flex;
+    justify-content: flex-end;
+   
+
+    
+  }
+  &__item_faicons {
+    background: url('../img/Services/Icons/fontawesomeicons.png') 0 0 no-repeat;
+   
+  }
+  &__item_wcform{
+    background: url('../img/Services/Icons/workingcontactform.png') 0 0 no-repeat;
+  }
+  &__item_fcode{
+    background: url('../img/Services/Icons/friendlycode.png') 0 0 no-repeat;
+
+  }
+  &__item_frdesign{
+    background: url('../img/Services/Icons/fullyresponsivedesign.png') 0 0 no-repeat;
+
+  }
+
+  &__item_rrihere{
+    background: url('../img/Services/Icons/retinareadyiconshere.png') 0 0 no-repeat;
+  }
+  &__item_ftlpdesign{
+    background: url('../img/Services/Icons/flattrendylandingpageDesign.png') 15px 0 no-repeat;
+  }
+
+  /* .services__item-icon */
+  &__item-icon {
+    
+  }
+  /* .services__item-img */
+  &__item-img {
+  }
+  /* .services__description */
+  &__description {
+    width: 427px;
+     &:hover{
+      background: pink;
+      text-shadow: 1px 1px 28px blue;
+      border-radius: 4px;
+      transition: all 150ms ease-out 0s;
+    }
+  }
+  /* .services__description-title */
+  &__description-title {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #394b50;
+    margin: 0 0 10px 0;
+  }
+  /* .services__description-text */
+  &__description-text {
+    font-family: "OpenSans", sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #7b7b7b;
+  }
+  /* .services__items-right */
+  &__items-right {
+    width: 523px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.container {
+}
+.title {
+  font-family: "Gotham", sans-serif;
+  font-size: 30px;
+  line-height: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  margin: 0 0 13px 0;
+  
+}
+.subtitle {
+  font-family: "OpenSans",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+}

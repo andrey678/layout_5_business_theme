@@ -93,7 +93,7 @@ h6 {
 /*--------------------------------------------------*/
 
 @font-face {
-  font-family: "BrandonGrotesque-Bold";
+  font-family: "BrandonGrotesque";
   font-display: swap;
   src: url("../fonts/BrandonGrotesque-Bold.woff") format("woff"), url("../fonts/BrandonGrotesque-Bold.woff2") format("woff2");
   font-weight: 700;
@@ -109,7 +109,7 @@ h6 {
 }
 
 @font-face {
-  font-family: "Lato-Bold";
+  font-family: "Lato";
   font-display: swap;
   src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
   font-weight: 700;
@@ -117,7 +117,7 @@ h6 {
 }
 
 @font-face {
-  font-family: "Lato-Light";
+  font-family: "Lato";
   font-display: swap;
   src: url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.woff2") format("woff2");
   font-weight: 300;
@@ -125,7 +125,7 @@ h6 {
 }
 
 @font-face {
-  font-family: "Lato-Regular";
+  font-family: "Lato";
   font-display: swap;
   src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -141,7 +141,7 @@ h6 {
 }
 
 @font-face {
-  font-family: "OpenSans-Regular";
+  font-family: "OpenSans";
   font-display: swap;
   src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -450,6 +450,143 @@ h6 {
 
 .services {
   padding: 203px 0 155px;
+  /* .services__title */
+  /* .services__subtitle */
+  /* .services__group */
+  /* .services__items-left */
+  /* .services__item */
+  /* .services__item-icon */
+  /* .services__item-img */
+  /* .services__description */
+  /* .services__description-title */
+  /* .services__description-text */
+  /* .services__items-right */
+}
+
+.services__title {
+  color: #394b50;
+  text-align: center;
+}
+
+.services__subtitle {
+  color: #394b50;
+  text-align: center;
+}
+
+.services__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 93px 0 0;
+}
+
+.services__items-left {
+  height: 428px;
+  width: 508px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.no-webp .services__item_faicons{
+  background: url("../img/Services/Icons/fontawesomeicons.png") 0 0 no-repeat; }
+
+.no-webp .services__item_wcform{
+  background: url("../img/Services/Icons/workingcontactform.png") 0 0 no-repeat; }
+
+.no-webp .services__item_fcode{
+  background: url("../img/Services/Icons/friendlycode.png") 0 0 no-repeat; }
+
+.no-webp .services__item_frdesign{
+  background: url("../img/Services/Icons/fullyresponsivedesign.png") 0 0 no-repeat; }
+
+.no-webp .services__item_rrihere{
+  background: url("../img/Services/Icons/retinareadyiconshere.png") 0 0 no-repeat; }
+
+.no-webp .services__item_ftlpdesign{
+  background: url("../img/Services/Icons/flattrendylandingpageDesign.png") 15px 0 no-repeat; }
+
+.services__description {
+  width: 427px;
+}
+
+.services__description:hover {
+  background: pink;
+  text-shadow: 1px 1px 28px blue;
+  border-radius: 4px;
+  -webkit-transition: all 150ms ease-out 0s;
+  -o-transition: all 150ms ease-out 0s;
+  transition: all 150ms ease-out 0s;
+}
+
+.services__description-title {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #394b50;
+  margin: 0 0 10px 0;
+}
+
+.services__description-text {
+  font-family: "OpenSans", sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #7b7b7b;
+}
+
+.services__items-right {
+  width: 523px;
+  height: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title {
+  font-family: "Gotham", sans-serif;
+  font-size: 30px;
+  line-height: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  margin: 0 0 13px 0;
+}
+
+.subtitle {
+  font-family: "OpenSans",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .webp .request__slider{ background: url(../img/Request/laptop.webp) center 0px no-repeat; }
@@ -459,3 +596,15 @@ h6 {
 .webp .form__input:nth-child(2){ background: url(../img/Request/Icons/email.webp) 15px 17px no-repeat, #ffffff; }
 
 .webp .form__input:nth-child(3){ background: url(../img/Request/Icons/phonenumber.webp) 15px 15px no-repeat, #ffffff; }
+
+.webp .services__item_faicons{ background: url(../img/Services/Icons/fontawesomeicons.webp) 0 0 no-repeat; }
+
+.webp .services__item_wcform{ background: url(../img/Services/Icons/workingcontactform.webp) 0 0 no-repeat; }
+
+.webp .services__item_fcode{ background: url(../img/Services/Icons/friendlycode.webp) 0 0 no-repeat; }
+
+.webp .services__item_frdesign{ background: url(../img/Services/Icons/fullyresponsivedesign.webp) 0 0 no-repeat; }
+
+.webp .services__item_rrihere{ background: url(../img/Services/Icons/retinareadyiconshere.webp) 0 0 no-repeat; }
+
+.webp .services__item_ftlpdesign{ background: url(../img/Services/Icons/flattrendylandingpageDesign.webp) 15px 0 no-repeat; }
