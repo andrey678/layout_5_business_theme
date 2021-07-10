@@ -92,6 +92,16 @@ h6 {
 
 /*--------------------------------------------------*/
 
+.btn__style {
+  border-radius: 4px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 @font-face {
   font-family: "BrandonGrotesque";
   font-display: swap;
@@ -587,6 +597,69 @@ h6 {
   font-weight: 400;
   text-transform: none;
   letter-spacing: normal;
+}
+
+.about {
+  /* .about__inner */
+  /* .about__picture */
+  /* .about__picture-jpg */
+  /* .about__info */
+  /* .about__title */
+  /* .about__text */
+  /* .about__btn */
+}
+
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__picture {
+  -ms-flex-preferred-size: 1 1 50%;
+      flex-basis: 1 1 50%;
+}
+
+.about__info {
+  -ms-flex-preferred-size: 1 1 50%;
+      flex-basis: 1 1 50%;
+  background-color: #ffc155;
+  padding: 164px 265px 174px 80px;
+}
+
+.about__title {
+  color: #ffffff;
+  margin: 0 0 28px 0;
+}
+
+.about__text {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 33px 0;
+}
+
+.about__btn {
+  display: block;
+  width: 145px;
+  height: 46px;
+  border: 1px solid #e7ad48;
+  background-color: transparent;
+}
+
+.about__btn:hover {
+  color: #e7ad48;
+  background-color: #ffffff;
+  border: none;
+  -webkit-transition: background-color 0.1s ease-out 0s, color 0.1s ease-out 0s;
+  -o-transition: background-color 0.1s ease-out 0s, color 0.1s ease-out 0s;
+  transition: background-color 0.1s ease-out 0s, color 0.1s ease-out 0s;
+}
+
+.btn {
+  /* .btn__text */
 }
 
 .webp .request__slider{ background: url(../img/Request/laptop.webp) center 0px no-repeat; }

@@ -14,6 +14,16 @@
   }
 }
 
+%btn_styler{
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
 @import "fonts";
 
 //Подключение Slick slider
@@ -395,4 +405,67 @@
   font-weight: 400;
   text-transform: none;
   letter-spacing: normal;
+}
+
+
+// Секция ABOUT
+.about {
+  /* .about__inner */
+  &__inner {
+    display: flex;
+  }
+  /* .about__picture */
+  &__picture {
+    flex-basis: 1 1 50%;
+
+  }
+  /* .about__picture-jpg */
+  &__picture-jpg {
+    
+  }
+  /* .about__info */
+  &__info {
+    flex-basis: 1 1 50%;
+    background-color: #ffc155;
+    padding: 164px 265px 174px 80px;
+  }
+  /* .about__title */
+  &__title {
+    color:#ffffff;
+    margin: 0 0 28px 0;
+  }
+  /* .about__text */
+  &__text {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 33px 0;
+  }
+  /* .about__btn */
+  &__btn {
+    display: block;
+    width: 145px;
+    height: 46px;
+    border: 1px solid #e7ad48;
+    background-color: transparent;
+    &:hover{
+      color: #e7ad48;
+      background-color: #ffffff;
+      border:none;
+      transition: background-color 0.1s ease-out 0s, color 0.1s ease-out 0s;
+    }
+  }
+}
+.container {
+}
+.title {
+}
+.btn {
+  /* .btn__text */
+  &__style {
+    
+    @extend %btn_styler;
+  }
 }
