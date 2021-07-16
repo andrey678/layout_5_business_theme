@@ -738,3 +738,131 @@
 .btn-main-style {
 }
  
+// Секция Happy Clients
+
+.clients {
+  background-color: #ffc155;
+  padding: 141px 0 160px;
+  /* .clients__top */
+  &__top {
+    text-align: center;
+
+  }
+  /* .clients__top-title */
+  &__top-title {
+    color: #ffffff;
+    line-height: 25px;
+  }
+  /* .clients__top-subtitle */
+  &__top-subtitle {
+    color: #ffffff;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    display: block;
+
+  }
+  /* .clients__comments */
+  &__comments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 38px 0 0 0;
+  }
+  /* .clients__comment */
+  &__comment {
+    max-width: 567px;
+    max-height: 241px;
+    background-color: #ffffff;
+    margin: 20px 0 0 0;
+    padding: 41px 41px 51px 30px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  /* .clients__comment-leftside */
+  &__comment-leftside {
+  }
+  /* .clients__comment-photo */
+  &__comment-photo {
+  }
+  /* .clients__comment-rightside */
+  &__comment-rightside {
+  }
+  /* .clients__comment-text */
+  &__comment-text {
+    font-family: 'OpenSans',sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #7b7b7b;
+    width: 344px;
+    display: block;
+    margin: 0 0 0 31px;
+    position:relative;
+    &:before{
+      content: '“';
+      position: absolute;
+      font-family: 'BrandonGrotesque', sans-serif;
+      font-size: 30px;
+      line-height: 22px;
+      font-weight: 700;
+      color: #7b7b7b;
+      display: inline-block;
+      left:-17px;
+    }
+    &:after{
+      content: '„';
+      position: absolute;
+      font-family: 'BrandonGrotesque', sans-serif;
+      font-size: 30px;
+      line-height: 22px;
+      font-weight: 700;
+      color: #7b7b7b;
+      display: inline-block;
+    }
+  }
+  /* .clients__comment-openquotes */
+  &__comment-openquotes {
+    font-family: 'BrandonGrotesque', sans-serif;
+    font-size: 30px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #7b7b7b;
+    display: inline-block;
+    margin: 0 7px 0 0;
+
+  }
+
+  /* .client__comment-closequotes */
+  &__comment-closequotes {
+    font-family: 'BrandonGrotesque', sans-serif;
+    font-size: 30px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #7b7b7b;
+    
+     }
+  /* .clients__comment-name */
+  &__comment-name {
+    margin:0 0 0 31px;
+    padding: 26px 0 0 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f6772c;
+  }
+  /* .clients__comment-position */
+  &__comment-position {
+    color: #99a9ae;
+  }
+}
+.container {
+}
+.title {
+}
+
