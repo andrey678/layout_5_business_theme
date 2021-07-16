@@ -19,3 +19,20 @@ document.querySelector('body').classList.add('no-webp');
 //Slick slider
 @@include('slick.js');
 @@include('slickrequest.js');
+
+//JQUERY PRACTICE
+// $(document).ready(function(){
+// 	$('#id');
+// });
+
+// $(function(){});
+
+// $(document).ready(function(){
+// 	$('.menu__link').mouseenter(function(){
+// 		$(this).toggleClass('menu__link_active')
+// 	});
+// 	$('.menu__link').mouseleave(function(){
+// 		$(this).toggleClass('menu__link_active')
+// 	});
+// });
+

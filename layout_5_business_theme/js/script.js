@@ -3062,3 +3062,20 @@ $('.request__slider').slick({
     nextArrow: false,
     prevArrow: false
 }); ;
+
+//JQUERY PRACTICE
+// $(document).ready(function(){
+// 	$('#id');
+// });
+
+// $(function(){});
+
+// $(document).ready(function(){
+// 	$('.menu__link').mouseenter(function(){
+// 		$(this).toggleClass('menu__link_active')
+// 	});
+// 	$('.menu__link').mouseleave(function(){
+// 		$(this).toggleClass('menu__link_active')
+// 	});
+// });
+
