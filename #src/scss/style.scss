@@ -231,7 +231,7 @@
     
     width: 281px;
     height: 46px;
-    font-family: "OpenSans", sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-size: 13px;
     line-height: 1.2;
     color: #a9a9a9;
@@ -866,3 +866,268 @@
 .title {
 }
 
+// Секция Footer
+
+.footer {
+  padding: 154px 0 52px;
+  /* .footer__top */
+  &__top {
+    text-align: center;
+  }
+  /* .footer__top-title */
+  &__top-title {
+    color: #394b50;
+    line-height: 25px;
+  }
+  /* .footer__top-subtitle */
+  &__top-subtitle {
+    display: block;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: normal;
+    margin: 0 0 38px 0;
+  }
+  /* .footer__top-form */
+  &__top-form {
+    display: block;
+    width: 934px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+
+  }
+  /* .footer__middle */
+  &__middle {
+    margin: 53px auto 57px;
+    width: 1102px;
+    height: 549px;
+    background: url('../img/Footer/footerbcg.png') 0 0/cover no-repeat;
+    padding: 37px 0 0 0;
+    position: relative;
+    
+    &:after{
+      position: absolute;
+      content:'';
+      width: 1170px;
+      height: 1px;
+      background-color:#e3e7ec;
+      bottom: -57px;
+      left: -36px;
+      display: block;
+
+    }
+
+  }
+  /* .footer__middle-inner */
+  &__middle-inner {
+    padding: 68px 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+    background: #394b50;
+    margin: 0 auto;
+    width: 285px;
+    height: 298px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    position:relative;
+
+    &:after{
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 14px solid #394b50;
+      top:291px;
+      left:131px;
+    }
+  }
+  /* .footer__middle-title */
+  &__middle-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  /* .footer__middle-text */
+  &__middle-text {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+    color: #aeb7ba;
+    width: 139px;
+    text-align: center;
+    display: inline-block;
+    margin:11px 0 0 0;
+
+  }
+  /* .footer__middle-email */
+  &__middle-email {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+    color: #ffbb42;
+  }
+  /* .footer__logo */
+  &__logo {
+    text-align: center;
+    margin: 15px;
+  }
+  /* .footer__bottom */
+  &__bottom {
+    padding: 68px 0 0 0;
+
+  }
+  /* .footer__bottom-menu */
+  &__bottom-menu {
+    width: 726px;
+    margin: 0 auto 29px;
+
+  }
+  /* .footer__bottom-phone */
+  &__bottom-phone {
+    font-family: 'Lato', sans-serif;
+    font-size: 22.6px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #394b50;
+    text-align: center;
+     position: relative;
+     margin: 0 auto;
+     width: 173px;
+     display: block;
+    &:before{
+      content:'';
+      position:absolute;
+      display: block;
+      background: url('../img/Footer/Icons/phone.png')0 0 no-repeat;
+      width: 16px;
+      height: 17px;
+      left:-10px;
+      top:4px;
+
+    }
+  }
+  /* .footer__bottom-social */
+  &__bottom-social {
+    margin: 23px auto 0;
+    width: 104px;
+    display: block;
+    }
+  
+}
+.container {
+}
+.title {
+}
+.form {
+  /* .form__input-name */
+  &__input-name {
+    width: 308px;
+    height: 47px;
+    border: 1px solid #cbcbcb;
+    padding:0 0 0 44px;
+    background: url('../img/Footer/Icons/username.png') 17px 15px no-repeat;
+    
+  }
+  /* .form__input-email */
+  &__input-email {
+    width: 388px;
+    height: 47px;
+    border: 1px solid #cbcbcb;
+    padding: 0 0 0 47px;
+    background: url('../img/Footer/Icons/email.png') 17px 16.5px no-repeat;
+    
+  }
+  /* .form__button */
+  &__button {
+    
+  }
+}
+.btn-main-style {
+}
+.logo {
+  /* .logo__link */
+  &__link {
+  }
+  /* .logo__img */
+  &__img {
+  }
+}
+.menu {
+  /* .menu__list */
+  &__list {
+  }
+  /* .menu__list-item */
+  &__list-item {
+  }
+  /* .menu__link */
+  &__link {
+  }
+}
+.social {
+
+  }
+  /* .social__list */
+  .social__list {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    flex-direction:row;
+    
+  }
+  /* .social__list-item */
+  .social__list-item {
+    
+
+    &:first-child{
+      // background: url('../img/Footer/Icons/twitter.png') 0 0 no-repeat;
+      // width: 16px;
+      // height: 15px;
+    }
+    &:nth-child(2){
+      // background: url('../img/Footer/Icons/facebook.png') 0 0 no-repeat;
+    }
+    &:nth-child(3){
+      // background: url('../img/Footer/Icons/googleplus.png') 0 0 no-repeat;
+    }
+    &:last-child{
+      // background: url('../img/Footer/Icons/linkedin.png') 0 0 no-repeat;
+    }
+    
+  }
+  /* .social__link */
+  .social__link {
+      
+    
+  }
+  /* .social__img */
+  .social__img {
+    
+}
+
+
+// Секция Copyright
+.copyright {
+  background-color: #709dca;
+  padding: 17px 0 15px;
+  text-align: center;
+  /* .copyright__text */
+  &__text {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+}
