@@ -368,25 +368,54 @@ left:0;
   }
   &__item_faicons {
     background: url('../img/Services/Icons/fontawesomeicons.png') 0 0 no-repeat;
+    transform: translate(0, 0);
+    transition: all 0.8s ease 0s;
+    &:hover{
+    transform: translate(0, 10px);
+    }
    
   }
   &__item_wcform{
     background: url('../img/Services/Icons/workingcontactform.png') 0 0 no-repeat;
+    transform: translate(0, 0);
+    transition: all 0.7s ease 0s;
+    &:hover{
+      transform: translate(10px, 0);
+    }
   }
   &__item_fcode{
     background: url('../img/Services/Icons/friendlycode.png') 0 0 no-repeat;
-
+    transform: scale(1, 1);
+    transition: all 0.8s ease 0s;
+    &:hover{
+      transform: scale(0.9, 1.4);
+    }
   }
   &__item_frdesign{
     background: url('../img/Services/Icons/fullyresponsivedesign.png') 0 0 no-repeat;
-
+    transform: scale(1,1);
+    transition: all 0.7s ease 0s;
+    &:hover{
+      transform: scale(-1.3, 0.7)
+    }
   }
 
   &__item_rrihere{
     background: url('../img/Services/Icons/retinareadyiconshere.png') 0 0 no-repeat;
+    transform: rotate(0deg);
+    transition:all 0.7s ease 0s;
+    &:hover{
+      transform: rotate(13deg);
+    }
+
   }
   &__item_ftlpdesign{
     background: url('../img/Services/Icons/flattrendylandingpageDesign.png') 15px 0 no-repeat;
+    transform:skew(0,0);
+    transition: all 0.6s ease 0s;
+    &:hover{
+      transform: skew(-13deg,-4deg);
+    }
   }
 
   /* .services__item-icon */
@@ -477,6 +506,13 @@ left:0;
   /* .about__picture */
   &__picture {
     flex-basis: 1 1 50%;
+    transform: translate3d(0px,0px,0px) rotate3d(1, 1, 1, 0deg);
+    transition:all 0.6s ease 0s;
+    perspective-origin: center;
+    perspective: 400px;
+    &:hover{
+      transform: translate3d(20px, 20px, 100px) rotate3d(1, 1, 1, 36deg);
+    }
 
   }
   /* .about__picture-jpg */
@@ -489,6 +525,11 @@ left:0;
     max-width: 850px;
     background-color: #ffc155;
     padding: 164px 265px 164px 80px;
+    transform: scale3d(1, 1, 1);
+    transition: all 0.6s ease 0s;
+    &:hover{
+      transform: scale3d(1.1,-1.1,1.3);
+    }
   }
   /* .about__title */
   &__title {
@@ -554,11 +595,12 @@ left:0;
   }
   /* .price__middle-inner */
   &__middle-inner {
-    padding: 79px 0 30px;
+    padding: 79px 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items:center;
     width: 1170px;
+    height: 501px;
   }
   /* .price__item */
   &__item {

@@ -3112,10 +3112,23 @@ $(document).ready(function(){
 	$('.logo__img').delay(8000).animate({'width':'60px'} ,300).animate({'width':'50px'}, 300)
 
 
-//Show header Our Services and subtitle
+//Swithing active tab of plan.
 
-	// $('.sevices__top-content').hide().scroll().slideDown(1000)???????????????
+	$('.price__item').mouseenter(function(){
+		$(this).toggleClass('price__item_active')
+		$('.price__item-title').toggleClass('price__item-title_active')
+		$('.price__cost-value').toggleClass('price__cost-value_active')
+		$('.price__cost-period').toggleClass('price__cost-period_active')
+		$('.price__feature').toggleClass('price__feature_active')
 
+	});
+	$('.price__item').mouseleave(function(){
+		$(this).toggleClass('price__item_active')
+		$('.price__item-title').toggleClass('price__item-title_active')
+		$('.price__cost-value').toggleClass('price__cost-value_active')
+		$('.price__cost-period').toggleClass('price__cost-period_active')
+		$('.price__feature').toggleClass('price__feature_active')
+	});
 });
 
 
