@@ -1177,6 +1177,18 @@ h6 {
   background-color: #ffbb42;
   position: relative;
   right: 17px;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.how__button:hover {
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
 }
 
 .clients {
@@ -1324,6 +1336,7 @@ h6 {
   /* .footer__logo */
   /* .footer__bottom */
   /* .footer__bottom-menu */
+  /* .footer__menu-link */
   /* .footer__bottom-phone */
   /* .footer__bottom-social */
 }
@@ -1449,6 +1462,13 @@ h6 {
 .footer__bottom-menu {
   width: 726px;
   margin: 0 auto 29px;
+}
+
+.footer__menu-link {
+  font-family: "Lato", sans-serif;
+  font-size: 13.5px;
+  line-height: 1.2;
+  color: #868686;
 }
 
 .footer__bottom-phone {

@@ -29,18 +29,27 @@
 //Подключение Slick slider
 @import "slick";
 
+
 //Cекция Header
 .header {
   // padding: 22px 0;
   height:93px;
   display: flex;
   align-items: center;
+  
+  
+  
+  
+  
+
+
   // .header__inner
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
 
   // .header__logo
@@ -52,6 +61,7 @@
 
   &__menu {
     width: 791px;
+
   }
 }
 .container {
@@ -151,6 +161,7 @@
 
 .request {
   background-color:  #709dca;
+
   
   // .request__inner
 
@@ -829,6 +840,12 @@ left:0;
     background-color: #ffbb42;
     position:relative;
     right:17px;
+    transition:all 0.8s ease 0s;
+    transform:scale(1,1);
+    &:hover{
+      transform:scale(-1,1);
+
+    }
   }
 
 }
@@ -1093,6 +1110,14 @@ left:0;
   &__bottom-menu {
     width: 726px;
     margin: 0 auto 29px;
+    
+  }
+/* .footer__menu-link */
+  &__menu-link {
+    font-family: "Lato", sans-serif;
+    font-size: 13.5px;
+    line-height: 1.2;
+    color: #868686;
 
   }
   /* .footer__bottom-phone */
